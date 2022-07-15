@@ -13,8 +13,8 @@ builder.Services.AddAuthentication(options => {
 })
 .AddCookie()
 .AddOpenIdConnect(options => {
-    options.ClientId = "PKCE";
-    options.Authority = "https://mdeller-pingfederate-engine.ping-devops.com";
+    options.ClientId = "sampleOIDC";
+    options.Authority = "https://pingfederate:9031";
     options.ResponseType = "code";
     options.GetClaimsFromUserInfoEndpoint = true;
     options.UsePkce = true;
