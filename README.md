@@ -55,3 +55,11 @@ dotnet watch
 ## Test the Application
 
 Navigate to the Privacy link of the presented application.  This will redirect you to PingFederate's authorization URL where you will be authenticated.
+
+## Troubleshooting
+
+* Common PingFederate misconfigurations include incorrect Redirect URI and Client ID
+* Enable developer tools in your browser and view the Network tab.  Enable the Persist or Preserve Log feature of the browser.
+* View the PingFederate server.log for any errors
+* View trace information provided by the dotnet application
+
